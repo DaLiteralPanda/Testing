@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Explorer - A Cosmic Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>🚀 SPACE EXPLORER 🌌</h1>
+            <p class="tagline">Navigate through the cosmos and avoid the asteroids!</p>
+        </div>
+        
+        <div class="game-screen" id="gameScreen">
+            <div class="game-info">
+                <div class="score-panel">
+                    <div class="score-item">
+                        <span class="label">Score:</span>
+                        <span class="value" id="score">0</span>
+                    </div>
+                    <div class="score-item">
+                        <span class="label">High Score:</span>
+                        <span class="value" id="highScore">0</span>
+                    </div>
+                    <div class="score-item">
+                        <span class="label">Level:</span>
+                        <span class="value" id="level">1</span>
+                    </div>
+                </div>
+            </div>
+            
+            <canvas id="gameCanvas"></canvas>
+            
+            <div class="start-screen" id="startScreen">
+                <div class="start-content">
+                    <h2>Ready for Launch?</h2>
+                    <p>Use ARROW KEYS or WASD to move your spaceship</p>
+                    <p>Avoid the asteroids and collect power-ups!</p>
+                    <button class="btn-start" id="startBtn">START MISSION</button>
+                </div>
+            </div>
+            
+            <div class="game-over-screen" id="gameOverScreen">
+                <div class="game-over-content">
+                    <h2>Mission Failed!</h2>
+                    <p>You've been hit by an asteroid!</p>
+                    <div class="final-score">
+                        Final Score: <span id="finalScore">0</span>
+                    </div>
+                    <button class="btn-restart" id="restartBtn">TRY AGAIN</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <h3>Controls</h3>
+            <div class="control-grid">
+                <div class="control-item">
+                    <span class="key">↑ / W</span>
+                    <span class="action">Move Up</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">↓ / S</span>
+                    <span class="action">Move Down</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">← / A</span>
+                    <span class="action">Move Left</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">→ / D</span>
+                    <span class="action">Move Right</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🌟 Created with HTML, CSS & JavaScript 🌟</p>
+            <p class="tip">💡 Tip: The longer you survive, the faster the asteroids become!</p>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
